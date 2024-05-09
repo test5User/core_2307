@@ -1,0 +1,30 @@
+Общая форма записи
+(параметры) -> (тело)
+
+так нельзя
+(cat, value) -> cat.getType().equals(value)
+нужен целевой тип
+Searchable<Breed> breedSearchable = (cat, value) -> cat.getType().equals(value);
+
+1. Лямбда выражение может содержать 0 или больше входных параметров
+    (int a, int b) -> {return a + b;}
+    (String str) -> {System.out.println(str);}
+    () -> 89;
+2. Тип параметра может быть явно объявлен или выведен из значения параметров
+    (String str) -> {System.out.println(str);}
+    (a) -> {System.out.println(a);}
+3. Если параметров нет или их больше 1, то скобки необходимы
+    () -> 89;
+    (int a, int b) -> {return a + b;}
+4. Если параметр 1, то скобки необязательны... НО в этом случае нельзя явно указать тип
+    a -> return a*2;
+5. Нет необходимости использовать {} и return если тело состоит из одного выражения
+    () -> 89;
+    (int a) -> a + 4;
+6. Если тело содержит больше одного выражения, то {} и return обязательны
+    () -> {
+        System.out.println("Hello world!!");
+        return 4;
+    }
+7. Если ключевое слово return отсутствует, то возвраащемый тип может быть void
+    () -> System.out.println("Hello world!!");
