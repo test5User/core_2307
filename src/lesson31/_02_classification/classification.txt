@@ -1,0 +1,14 @@
+1. Аннотации для аннотаций
+    @Target
+    @Retention
+    @Documented
+    @Inherited
+    @Repeatable
+2. Аннотации для кода
+    @Override
+    @Deprecated
+    @SuppressWarnings
+    @SafeVarargs
+    @FunctionalInterface
+3. Native
+4. Аннотации написанные программистом
