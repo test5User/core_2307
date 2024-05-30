@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<animals>
+    <animal id="1">
+        <name>Barsik</name>
+        <age>2</age>
+        <box>
+            <thing>
+                <name>Mouse</name>
+            </thing>
+            <thing>
+                <name>Ball</name>
+            </thing>
+        </box>
+    </animal>
+    <animal id="2">
+        <name>Pushok</name>
+        <age>4</age>
+    </animal>
+    <animal id="2" name="Pushok" age="4"/>
+</animals>
